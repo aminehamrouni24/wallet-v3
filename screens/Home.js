@@ -41,8 +41,6 @@ const Home = () => {
           style={{
             width: "90%",
             alignSelf: "center",
-            // borderColor: "black",
-            // borderWidth: 1,
             height: 350,
             margin: 50,
           }}
@@ -67,7 +65,7 @@ const Home = () => {
                 style={{
                   fontFamily: "CairoBold",
                   fontSize: 18,
-                  color: "#FA8072",
+                  color: "#0e044d",
                 }}
               >
                 Amine Hamrouni
@@ -80,7 +78,7 @@ const Home = () => {
                 style={{
                   width: 30,
                   height: 40,
-                  tintColor: "rgba(0,0,255,0.6)",
+                  tintColor: "#0e044d",
                   margin: 10,
                 }}
               />
@@ -189,7 +187,7 @@ const Home = () => {
             <TouchableOpacity
               style={{
                 width: 150,
-                backgroundColor: "rgba(250,128,114,0.8)",
+                backgroundColor: "goldenrod",
                 height: 60,
                 borderRadius: 20,
               }}
@@ -225,7 +223,7 @@ const Home = () => {
             <TouchableOpacity
               style={{
                 width: 150,
-                backgroundColor: "rgba(0,0,255,0.6)",
+                backgroundColor: "#0e044d",
                 height: 60,
                 borderRadius: 20,
               }}
@@ -331,7 +329,7 @@ const Home = () => {
           <TouchableOpacity
             style={{
               width: 350,
-              backgroundColor: "rgba(0,0,255,0.6)",
+              backgroundColor: "#0e044d",
               height: 60,
               borderRadius: 20,
             }}
@@ -370,7 +368,7 @@ const Home = () => {
                   width: 30,
                   height: 60,
                   marginLeft: 15,
-                  tintColor: "#FA8072",
+                  tintColor: "goldenrod",
                 }}
               />
             </View>

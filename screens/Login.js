@@ -22,8 +22,9 @@ const NextRegister = () => {
     >
       <View
         style={{
-          marginTop: 20,
-          marginBottom: 20,
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
         }}
       >
         <Text
@@ -31,11 +32,19 @@ const NextRegister = () => {
             fontSize: 34,
             letterSpacing: 2,
             fontWeight: "bold",
-            color: "rgba(0,0,255,0.75)",
+            color: "#0e044d",
           }}
         >
           Login
         </Text>
+        <Image
+          source={require("../assets/eight-logo-2.png")}
+          resizeMode="contain"
+          style={{
+            width: 100,
+            height: 80,
+          }}
+        />
       </View>
       <View
         style={{
@@ -149,7 +158,7 @@ const NextRegister = () => {
           justifyContent: "space-evenly",
           padding: 2,
           width: 350,
-          backgroundColor: "rgba(0,0,255,0.55)",
+          backgroundColor: "#0e044d",
           height: 50,
           alignItems: "center",
           borderRadius: 20,
@@ -210,7 +219,7 @@ const NextRegister = () => {
             <Text
               style={{
                 fontSize: 14,
-                color: "blue",
+                color: "#0e044d",
                 fontWeight: "bold",
                 margin: 5,
               }}
@@ -223,7 +232,7 @@ const NextRegister = () => {
               style={{
                 width: 30,
                 height: 30,
-                tintColor: "blue",
+                tintColor: "#0e044d",
               }}
             />
           </TouchableOpacity>

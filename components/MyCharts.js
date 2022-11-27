@@ -17,10 +17,10 @@ const MyCharts = () => {
     >
       <Text
         style={{
-          color: "rgba(0,0,255,0.6)",
+          color: "#0e044d",
           fontFamily: "Philosopher",
           fontSize: 18,
-          margin:25
+          margin: 25,
         }}
       >
         Income/Expenses :
@@ -49,11 +49,11 @@ const MyCharts = () => {
           strokeWidth: 2, // optional, default 3
           barPercentage: 0.5,
           useShadowColorFromDataset: false, // optional
-          stroke: "rgba(0,0,255,0.6)",
+          stroke: "#0e044d",
           propsForDots: {
             r: "6",
             strokeWidth: "2",
-            stroke: "rgba(0,0,255,0.6)",
+            stroke: "#0e044d",
           },
         }}
         bezier

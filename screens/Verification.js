@@ -26,142 +26,157 @@ const Verification = () => {
     const [isLoaded] = useFonts(customFonts);
     if (!isLoaded) return null;
   return (
-    <SafeAreaView
+    <View
       style={{
-        width: "90%",
-        alignSelf: "center",
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#0e044d",
       }}
     >
-      <View
+      <SafeAreaView
         style={{
-          marginTop: 50,
-          marginBottom: 20,
+          width: "90%",
+          alignSelf: "center",
         }}
       >
-        <Text
+        <View
           style={{
-            fontSize: 34,
-            letterSpacing: 2,
-            fontWeight: "bold",
-            color: "rgba(0,0,255,0.75)",
+            marginTop: 50,
+            marginBottom: 20,
           }}
         >
-          Identity
-        </Text>
-        <Text
-          style={{
-            fontSize: 34,
-            letterSpacing: 2,
-            fontWeight: "bold",
-            color: "rgba(0,0,255,0.75)",
-          }}
-        >
-          Verification
-        </Text>
-      </View>
-      <View
-        style={{
-          marginTop: 20,
-          marginBottom: 50,
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 16,
-            letterSpacing: 1,
-            textAlign: "justify",
-            lineHeight: 20,
-            fontFamily:"Philosopher"
-          }}
-        >
-          Please verify your identity by uploading your passport or your driver
-          licence .
-        </Text>
-      </View>
-      {/* <Button title="Select Document" onPress={_pickDocument} /> */}
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <TouchableOpacity
-          onPress={_pickDocument}
-          style={{
-            backgroundColor: "rgba(0,0,255,0.15)",
-            width: 150,
-            height: 210,
-            alignItems: "center",
-            borderRadius: 20,
-            padding: 10,
-          }}
-        >
-          <Image
-            source={require("../assets/upload.png")}
-            style={{
-              width: 130,
-              height: 130,
-              tintColor: "rgba(0,0,255,0.65)",
-            }}
-          />
           <Text
             style={{
-              fontSize: 20,
+              fontSize: 34,
+              letterSpacing: 2,
+              fontWeight: "bold",
+              color: "gold",
+            }}
+          >
+            Identity
+          </Text>
+          <Text
+            style={{
+              fontSize: 34,
+              letterSpacing: 2,
+              fontWeight: "bold",
+              color: "gold",
+            }}
+          >
+            Verification
+          </Text>
+        </View>
+        <View
+          style={{
+            marginTop: 20,
+            marginBottom: 50,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              letterSpacing: 1,
+              textAlign: "justify",
+              lineHeight: 20,
+              fontFamily: "Philosopher",
+              color: "#fff",
+            }}
+          >
+            Please verify your identity by uploading your passport or your
+            driver licence .
+          </Text>
+        </View>
+        {/* <Button title="Select Document" onPress={_pickDocument} /> */}
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <TouchableOpacity
+            onPress={_pickDocument}
+            style={{
+              backgroundColor: "rgba(255,255,255,0.7)",
+              width: 150,
+              height: 210,
+              alignItems: "center",
+              borderRadius: 20,
+              padding: 10,
+            }}
+          >
+            <Image
+              source={require("../assets/upload.png")}
+              style={{
+                width: 130,
+                height: 130,
+                tintColor: "#0e044d",
+              }}
+            />
+            <Text
+              style={{
+                fontSize: 20,
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Your Passport
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={_pickDocument}
+            style={{
+              backgroundColor: "rgba(255,255,255,0.7)",
+              width: 150,
+              height: 210,
+              alignItems: "center",
+              borderRadius: 20,
+              padding: 10,
+            }}
+          >
+            <Image
+              source={require("../assets/upload.png")}
+              style={{
+                width: 130,
+                height: 130,
+                tintColor: "#0e044d",
+              }}
+            />
+            <Text
+              style={{
+                fontSize: 20,
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Your Driver Licence
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "rgba(255,255,255,1)",
+            width: 250,
+            height: 50,
+            alignSelf: "center",
+            borderRadius: 20,
+            marginTop: 120,
+          }}
+          onPress={press}
+        >
+          <Text
+            style={{
+              textAlign: "center",
+              padding: 10,
+              fontSize: 18,
+              color: "#0e044d",
               fontWeight: "bold",
             }}
           >
-            Your Passport
+            VERIFY
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={_pickDocument}
-          style={{
-            backgroundColor: "rgba(0,0,255,0.15)",
-            width: 150,
-            height: 210,
-            alignItems: "center",
-            borderRadius: 20,
-            padding: 10,
-          }}
-        >
-          <Image
-            source={require("../assets/upload.png")}
-            style={{
-              width: 130,
-              height: 130,
-              tintColor: "rgba(0,0,255,0.65)",
-            }}
-          />
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: "bold",
-            }}
-          >
-            Your Driver Licence
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <TouchableOpacity
-        style={{
-          backgroundColor: "rgba(0,0,255,0.65)",
-          width:250,
-          height:50,
-          alignSelf:"center",
-          borderRadius:20,
-          marginTop:120
-        }}
-        onPress={press}
-      >
-        <Text style={{
-            textAlign:"center",
-            padding:10,
-            fontSize:18,
-            color:"white",
-            fontWeight:"bold"
-        }}>VERIFY</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+      </SafeAreaView>
+    </View>
   );
 };
 

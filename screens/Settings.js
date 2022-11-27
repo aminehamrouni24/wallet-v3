@@ -87,7 +87,7 @@ const Settings = () => {
               style={{
                 fontFamily: "CairoBold",
                 fontSize: 38,
-                color: "rgba(0,0,255,0.6)",
+                color: "#0e044d",
                 letterSpacing: 1,
               }}
             >
@@ -152,7 +152,7 @@ const Settings = () => {
               style={{
                 width: 35,
                 height: 40,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -183,7 +183,7 @@ const Settings = () => {
               style={{
                 width: 40,
                 height: 40,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -213,7 +213,7 @@ const Settings = () => {
               style={{
                 width: 35,
                 height: 35,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -243,7 +243,7 @@ const Settings = () => {
               style={{
                 width: 35,
                 height: 35,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -273,7 +273,7 @@ const Settings = () => {
               style={{
                 width: 35,
                 height: 35,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -303,7 +303,7 @@ const Settings = () => {
               style={{
                 width: 40,
                 height: 40,
-                tintColor: "rgba(250,128,114,0.9)",
+                tintColor: "goldenrod",
                 // rgba(0,0,255,0.6)
               }}
             />
@@ -324,21 +324,23 @@ const Settings = () => {
             <TouchableOpacity
               style={{
                 width: 280,
-                backgroundColor: "rgba(0,0,255,0.6)",
+                backgroundColor: "#0e044d",
                 height: 50,
                 alignSelf: "center",
                 margin: 15,
                 borderRadius: 20,
               }}
             >
-              <Text style={{
-                fontFamily:"CairoBold",
-                fontSize:20,
-                letterSpacing:2,
-                margin:5,
-                textAlign:"center",
-                color:"white"
-              }}>
+              <Text
+                style={{
+                  fontFamily: "CairoBold",
+                  fontSize: 20,
+                  letterSpacing: 2,
+                  margin: 5,
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
                 Log out
               </Text>
             </TouchableOpacity>

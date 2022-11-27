@@ -16,192 +16,187 @@ const SecondPage = () => {
     const [isLoaded] = useFonts(customFonts);
     if (!isLoaded) return null;
   return (
-     <View
+    <View
       style={{
         backgroundColor: "#0e044d",
         width: "100%",
         height: "100%",
       }}
     >
-
-    <SafeAreaView
-      style={{
-        width: "90%",
-        alignSelf: "center",
-      }}
-    >
-      {/* Image part */}
-      <Image
-        source={require("../assets/onboard2.png")}
-        resizeMode="contain"
-        style={{
-          width: 220,
-          height: 200,
-          tintColor: "rgba(0,0,255,0.75)",
-          alignSelf: "center",
-          marginTop: 85,
-          marginBottom: 35,
-        }}
-      />
-      <View
-        style={{
-          width: 120,
-          height: 120,
-          borderBottomEndRadius: 120,
-          borderTopEndRadius: 130,
-          borderBottomStartRadius: 170,
-          borderTopStartRadius: 90,
-          backgroundColor: "rgba(0,0,255,0.1)",
-          position: "absolute",
-          top: 250,
-          left: 30,
-        }}
-      ></View>
-      <View
-        style={{
-          width: 150,
-          height: 150,
-          borderBottomEndRadius: 170,
-          borderTopEndRadius: 90,
-          borderBottomStartRadius: 120,
-          borderTopStartRadius: 130,
-          backgroundColor: "rgba(0,0,255,0.1)",
-          position: "absolute",
-          top: 70,
-          left: 170,
-        }}
-      ></View>
-      {/* Text Part */}
-      <View
+      <SafeAreaView
         style={{
           width: "90%",
           alignSelf: "center",
-          marginTop: 35,
-          marginBottom: 15,
         }}
       >
-        <Text
+        {/* Image part */}
+        <Image
+          source={require("../assets/onboard2.png")}
+          resizeMode="contain"
           style={{
-            fontSize: 32,
-            letterSpacing: 1,
-            // fontWeight: "bold",
-            fontFamily: "Philosopher",
+            width: 220,
+            height: 200,
+            tintColor: "#fff",
+            alignSelf: "center",
+            marginTop: 85,
+            marginBottom: 35,
+          }}
+        />
+        <View
+          style={{
+            width: 120,
+            height: 120,
+            borderBottomEndRadius: 120,
+            borderTopEndRadius: 130,
+            borderBottomStartRadius: 170,
+            borderTopStartRadius: 90,
+            backgroundColor: "rgba(255,250,255,0.15)",
+            position: "absolute",
+            top: 250,
+            left: 30,
+          }}
+        ></View>
+        <View
+          style={{
+            width: 150,
+            height: 150,
+            borderBottomEndRadius: 170,
+            borderTopEndRadius: 90,
+            borderBottomStartRadius: 120,
+            borderTopStartRadius: 130,
+            backgroundColor: "rgba(255,250,255,0.15)",
+            position: "absolute",
+            top: 70,
+            left: 170,
+          }}
+        ></View>
+        {/* Text Part */}
+        <View
+          style={{
+            width: "90%",
+            alignSelf: "center",
+            marginTop: 35,
+            marginBottom: 15,
           }}
         >
-          Track your money
-        </Text>
-        <Text
-          style={{
-            fontSize: 32,
-            letterSpacing: 1,
-            // fontWeight: "bold",
-            fontFamily: "Philosopher",
-          }}
-        >
-          Trust our system
-        </Text>
-      </View>
+          <Text
+            style={{
+              fontSize: 32,
+              letterSpacing: 1,
+              // fontWeight: "bold",
+              fontFamily: "Philosopher",
+              color: "gold",
+            }}
+          >
+            Track your money
+          </Text>
+          <Text
+            style={{
+              fontSize: 32,
+              letterSpacing: 1,
+              // fontWeight: "bold",
+              fontFamily: "Philosopher",
+              color: "gold",
+            }}
+          >
+            Trust our system
+          </Text>
+        </View>
 
-      {/* ****** */}
-      <View
-        style={{
-          width: "90%",
-          alignSelf: "center",
-          marginTop: 35,
-          marginBottom: 150,
-        }}
-      >
-        <Text
+        {/* ****** */}
+        <View
           style={{
-            fontSize: 18,
-            textAlign: "justify",
-            fontFamily: "Philosopher",
+            width: "90%",
+            alignSelf: "center",
+            marginTop: 35,
+            marginBottom: 150,
           }}
         >
-          Stay on top effortessly by tracking your subscriptions and bills ..
-        </Text>
-      </View>
-      {/* Skip Part */}
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <TouchableOpacity
+          <Text
+            style={{
+              fontSize: 18,
+              textAlign: "justify",
+              fontFamily: "Philosopher",
+              color: "#fff",
+            }}
+          >
+            Stay on top effortessly by tracking your subscriptions and bills ..
+          </Text>
+        </View>
+        {/* Skip Part */}
+        <View
           style={{
-            backgroundColor: "rgba(0,0,255,0.75)",
-            width: 60,
-            height: 60,
-            borderBottomEndRadius: 400,
-            borderTopEndRadius: 400,
-            borderBottomStartRadius: 400,
-            borderTopStartRadius: 400,
-            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "space-between",
           }}
-          onPress={() => navigation.navigate("Register")}
         >
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#fff",
+              width: 60,
+              height: 60,
+              borderBottomEndRadius: 400,
+              borderTopEndRadius: 400,
+              borderBottomStartRadius: 400,
+              borderTopStartRadius: 400,
+              alignItems: "center",
+            }}
+            onPress={() => navigation.navigate("Register")}
+          >
+            <Text
+              style={{
+                padding: 2,
+                alignItems: "center",
+                fontSize: 15,
+                marginTop: 15,
+                color: "#0e044d",
+              }}
+            >
+              Skip
+            </Text>
+          </TouchableOpacity>
+
+          {/* ******** */}
           <Text
             style={{
               padding: 2,
               alignItems: "center",
-              fontSize: 15,
+              fontSize: 20,
+              fontWeight: "bold",
               marginTop: 15,
-              color: "white",
+              color: "#fff",
             }}
           >
-            Skip
+            . . .
           </Text>
-        </TouchableOpacity>
 
-        {/* ******** */}
-        <Text
-          style={{
-            padding: 2,
-            alignItems: "center",
-            fontSize: 20,
-            fontWeight: "bold",
-            marginTop: 15,
-            color: "black",
-          }}
-        >
-          . . .
-        </Text>
-        {/* <Text style={{
-            padding:2,
-            alignItems:"center",
-            fontSize:16,
-            fontWeight:"bold",
-            marginTop:20,
-            color:"black"
-          }}>1/3</Text> */}
-        <TouchableOpacity
-          style={{
-            backgroundColor: "rgba(250,128,114,0.75)",
-            width: 60,
-            height: 60,
-            borderBottomEndRadius: 400,
-            borderTopEndRadius: 400,
-            borderBottomStartRadius: 400,
-            borderTopStartRadius: 400,
-            alignItems: "center",
-          }}
-          onPress={() => navigation.navigate("ThirdPage")}
-        >
-          <Text
+          <TouchableOpacity
             style={{
-              padding: 2,
+              backgroundColor: "gold",
+              width: 60,
+              height: 60,
+              borderBottomEndRadius: 400,
+              borderTopEndRadius: 400,
+              borderBottomStartRadius: 400,
+              borderTopStartRadius: 400,
               alignItems: "center",
-              fontSize: 15,
-              marginTop: 15,
-              color: "white",
             }}
+            onPress={() => navigation.navigate("ThirdPage")}
           >
-            2/3
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
+            <Text
+              style={{
+                padding: 2,
+                alignItems: "center",
+                fontSize: 15,
+                marginTop: 15,
+                color: "#0e044d",
+              }}
+            >
+              2/3
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
     </View>
   );
 };

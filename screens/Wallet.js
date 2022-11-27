@@ -64,7 +64,7 @@ const Wallet = () => {
                 style={{
                   fontFamily: "Cairo",
                   fontSize: 26,
-                  color: "rgba(0,0,255,0.6)",
+                  color: "#0e044d",
                 }}
               >
                 Balance
@@ -75,7 +75,7 @@ const Wallet = () => {
                 style={{
                   width: 30,
                   height: 40,
-                  tintColor: "rgba(0,0,255,0.6)",
+                  tintColor: "#0e044d",
                   margin: 10,
                 }}
               />
@@ -93,6 +93,7 @@ const Wallet = () => {
                   fontFamily: "Cairo",
                   fontSize: 32,
                   textAlign: "center",
+                  color: "goldenrod",
                 }}
               >
                 $ 00.00
@@ -131,7 +132,7 @@ const Wallet = () => {
                   style={{
                     fontFamily: "Cairo",
                     fontSize: 16,
-                    color: "rgba(250,128,114,0.9)",
+                    color: "goldenrod",
                   }}
                 >
                   £ 00.00
@@ -161,7 +162,7 @@ const Wallet = () => {
                   style={{
                     fontFamily: "Cairo",
                     fontSize: 16,
-                    color: "rgba(250,128,114,0.9)",
+                    color: "goldenrod",
                   }}
                 >
                   $ 00.00
@@ -191,7 +192,7 @@ const Wallet = () => {
                   style={{
                     fontFamily: "Cairo",
                     fontSize: 16,
-                    color: "rgba(250,128,114,0.9)",
+                    color: "goldenrod",
                   }}
                 >
                   € 00.00
@@ -226,7 +227,7 @@ const Wallet = () => {
                 width: 300,
                 height: 55,
                 alignSelf: "center",
-                backgroundColor: "rgba(0,0,255,0.6)",
+                backgroundColor: "#0e044d",
                 borderRadius: 20,
                 padding: 10,
                 borderColor: "lightgrey",
@@ -259,7 +260,7 @@ const Wallet = () => {
                   style={{
                     width: 40,
                     height: 40,
-                    tintColor: "rgba(0,0,255,0.6)",
+                    tintColor: "#0e044d",
                     // rgba(0,0,255,0.6)
                   }}
                 />
@@ -279,7 +280,7 @@ const Wallet = () => {
               style={{
                 fontFamily: "Philosopher",
                 fontSize: 18,
-                color: "rgba(0,0,255,0.6)",
+                color: "#0e044d",
                 marginLeft: 30,
                 marginBottom: 15,
               }}
@@ -326,14 +327,14 @@ const Wallet = () => {
                   style={{
                     width: 60,
                     height: 40,
-                    tintColor: "rgba(0,0,255,0.6)",
+                    tintColor: "#0e044d",
                   }}
                 />
                 <Text
                   style={{
                     fontFamily: "Philosopher",
                     fontSize: 16,
-                    color: "rgba(250,128,114,0.8)",
+                    color: "goldenrod",
                   }}
                 >
                   Transfer
@@ -379,14 +380,14 @@ const Wallet = () => {
                   style={{
                     width: 60,
                     height: 40,
-                    tintColor: "rgba(0,0,255,0.6)",
+                    tintColor: "#0e044d",
                   }}
                 />
                 <Text
                   style={{
                     fontFamily: "Philosopher",
                     fontSize: 18,
-                    color: "rgba(250,128,114,0.8)",
+                    color: "goldenrod",
                   }}
                 >
                   Top up
@@ -436,7 +437,7 @@ const Wallet = () => {
                   style={{
                     width: 50,
                     height: 50,
-                    tintColor: "rgba(0,0,255,0.6)",
+                    tintColor: "#0e044d",
                     marginRight: 20,
                   }}
                 />
@@ -446,7 +447,7 @@ const Wallet = () => {
                   style={{
                     fontFamily: "Philosopher",
                     fontSize: 18,
-                    color: "rgba(250,128,114,0.8)",
+                    color: "goldenrod",
                     letterSpacing: 1,
                   }}
                 >
@@ -481,7 +482,7 @@ const Wallet = () => {
                 width: 350,
                 height: 54,
                 alignSelf: "center",
-                backgroundColor: "rgba(0,0,255,0.6)",
+                backgroundColor: "#0e044d",
                 borderRadius: 20,
                 padding: 10,
                 borderColor: "lightgrey",
@@ -514,7 +515,7 @@ const Wallet = () => {
                   style={{
                     width: 35,
                     height: 35,
-                    tintColor: "rgba(0,0,255,0.6)",
+                    tintColor: "#0e044d",
                     // rgba(0,0,255,0.6)
                   }}
                 />
